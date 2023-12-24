@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+body{
+    margin-top: 3%;
+}
+#carousel-exe {
+    width: 50%; 
+    height: 70vh; 
+    overflow: hidden; 
+    margin:0 auto; 
+}
+#carousel-exe img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.container{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: justify;
+}
+p{
+    margin-top: 3%;
+}
+button{
+    width: 10%;
+}
+
+@media screen and (min-width: 641px)  and (max-width: 1023px){
+
+   
+    body{
+    margin-top: 0%;
+}
+
+    #carousel-exe {
+        width: 100%; 
+        height: 40vh;
+    }
+
+    .col-4{
+        width: 50%;
+        padding: 3%;
+    }
+    .card{
+        width: 110%
+    }
+}
+@media screen and (max-width: 640px) {
+
+body{
+margin-top: 0%;
+}
+
+#carousel-exe {
+    width: 100%; 
+    height: 40vh;
+}
+
+.col-4{
+    width: 80%;
+    padding: 3%;
+}
+.card{
+    width: 120%
+}
+}
+    </style>
+
+
+<div id="carousel-exe" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div data-bs-interval="3000" class="carousel-item active" >
+            <img src="https://cdn.pixabay.com/photo/2021/01/09/17/22/forest-5903010_1280.jpg" alt="">
+            <div class="carousel-caption m-5">
+                <h2>Floresta Branca</h2>
+            </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2020/05/29/17/12/sunset-5235908_1280.jpg" alt="">
+            <div class="carousel-caption m-5">
+                <h2>Floresta Amazonica</h2>
+            </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2019/12/05/10/01/forest-4674703_1280.jpg" alt="">
+            <div class="carousel-caption m-5">
+                <h2>Floresta Explorada</h2>
+            </div>
+        </div> 
+    </div>
+    <button data-bs-target="#carousel-exe" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button data-bs-target="#carousel-exe" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+        <button  class="active" type="button" data-bs-target="#carousel-exe" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exe" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exe" data-bs-slide-to="2"></button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    Floresta 1
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Floresta Branca</h4>
+                    <h5 class="card-subtitle">Localizada na Russia</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus temporibus tempore consequatur officia non commodi reprehenderit.</p>
+                    <a href="" class="btn btn-primary"> Veja mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    Floresta 2
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Floresta Amazonica</h4>
+                    <h5 class="card-subtitle">Localizada no Brasil</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio, ipsam perferendis magnam molestiae earum omnis sequi</p>
+                    <a href="" class="btn btn-primary"> Veja mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    Floresta 3
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Floresta explorada</h4>
+                    <h5 class="card-subtitle">Nem sei onde Fica</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorem dolor sequi, totam, minus porro hic nulla debitis.gotorada, kolosadadada</p>
+                    <a href="" class="btn btn-primary">Veja mais</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="./lib/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
